@@ -4,6 +4,7 @@ import Add from "./components/Add/Add";
 import AdminPage from "./components/AdminPage/AdminPage";
 import Collections from "./components/Collections/Collections";
 import Edit from "./components/Edit/Edit";
+import Following from "./components/Following/Following";
 import Navbar from "./components/Navbar/Navbar";
 import Navbar2 from "./components/Navbar2/Navbar2";
 import Phone from "./components/Phone/Phone";
@@ -23,6 +24,7 @@ function App() {
             <Route path="/edit/:id" element={<Edit />} />
             <Route path="/phone" element={<Phone />} />
             <Route path="/collections" element={<Collections />} />
+            <Route path="/following" element={<Following />} />
           </Routes>
         </BrowserRouter>
       </FavContextProvider>

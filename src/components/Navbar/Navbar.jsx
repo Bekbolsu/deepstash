@@ -64,15 +64,15 @@ const Navbar = () => {
                 <Box className="modal_pro" sx={style}>
                   <div className="modal_block1">
                     <h1 className="modal_block1_h1">Get Deepstash Pro</h1>
-                    <h4 className="modal_block1_h4">It's time to</h4>
+                    <h3 className="modal_block1_h4">It's time to</h3>
                     <h2 className="modal_block1_h2">Read Like a Pro</h2>
-                    <h6 className="modal_block1_h6">
+                    <h3 className="modal_block1_h6">
                       Jump-start your reading habits, gather your knowledge,
                       remember what you read and stay ahead of the crowd!
-                    </h6>
-                    <h5 className="modal_block1_h5">
+                    </h3>
+                    <h3 className="modal_block1_h5">
                       Takes just 5 minutes a day.
-                    </h5>
+                    </h3>
                   </div>
                   <div className="modal_block2">
                     <h3 className="visa">Visa Maestro Bitcoin</h3>
@@ -109,6 +109,7 @@ const Navbar = () => {
                       </div>
                     </div>
                     <Button
+                      style={{ marginTop: "20px" }}
                       onClick={() => {
                         pay();
                       }}
@@ -148,9 +149,9 @@ const Navbar = () => {
           <Link to="/" className="navbar2_a" href="#">
             recommended
           </Link>
-          <a className="navbar2_a" href="#">
+          <Link to="/following" className="navbar2_a" href="#">
             following
-          </a>
+          </Link>
           <a className="navbar2_a" href="#">
             Chat
           </a>

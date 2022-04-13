@@ -23,10 +23,16 @@ const Navbar2 = () => {
   return (
     <div className="container">
       <div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <h3>COLLECTIONS</h3>
           <Link style={{ textDecoration: "none" }} to="/collections">
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex", alignItems: "center" }}>
               <h3>See All</h3>
               <img className="col_all" src={image2} alt="" />
             </div>
