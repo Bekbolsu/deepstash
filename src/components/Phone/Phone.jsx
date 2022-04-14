@@ -15,7 +15,7 @@ const Phone = () => {
   return (
     <div className="mobile">
       <div className="mobile_inner">
-        <h1>Get the free Deepstash app</h1>
+        <h1 className="phone_h1">Get the free Deepstash app</h1>
         <div className="mobile_blocks">
           <div className="mobile_block1">
             <h2 className="mobile_block1_h2">WHAT IS DEEPSTASH</h2>
@@ -79,23 +79,21 @@ const Phone = () => {
         </div>
         <img className="img_footer" src={image4} alt="" />
         <div className="main_footer">
-          <div>
-            <a target="_blank" href="https://www.instagram.com/deepstash/">
-              <img className="footer_nav" src={image5} alt="" />
-            </a>
-            <a target="_blank" href="https://www.facebook.com/deepstash/">
-              <img className="footer_nav" src={image6} alt="" />
-            </a>
-            <a target="_blank" href="https://twitter.com/deepstash/">
-              <img className="footer_nav" src={image7} alt="" />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
-            >
-              <img className="footer_nav" src={image8} alt="" />
-            </a>
-          </div>
+          <a target="_blank" href="https://www.instagram.com/deepstash/">
+            <img className="footer_nav" src={image5} alt="" />
+          </a>
+          <a target="_blank" href="https://www.facebook.com/deepstash/">
+            <img className="footer_nav" src={image6} alt="" />
+          </a>
+          <a target="_blank" href="https://twitter.com/deepstash/">
+            <img className="footer_nav" src={image7} alt="" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
+          >
+            <img className="footer_nav" src={image8} alt="" />
+          </a>
         </div>
       </div>
     </div>

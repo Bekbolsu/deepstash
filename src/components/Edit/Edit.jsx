@@ -25,7 +25,7 @@ const Edit = () => {
   return edit ? (
     <div className="edit1">
       <div className="edit_inner">
-        <div>
+        <div className="edit_block">
           Image :
           <input
             className="edit"
@@ -36,7 +36,7 @@ const Edit = () => {
             placeholder="URL of image"
           />
         </div>
-        <div style={{ margin: "10px 0" }}>
+        <div className="edit_block" style={{ margin: "10px 0" }}>
           Title :
           <input
             className="edit edit3"
@@ -47,7 +47,10 @@ const Edit = () => {
             placeholder="Title"
           />
         </div>
-        <div style={{ display: "flex", alignItems: "flex-start" }}>
+        <div
+          className="edit_block"
+          style={{ display: "flex", alignItems: "flex-start" }}
+        >
           Description :
           <textarea
             className="edit2"
