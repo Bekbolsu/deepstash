@@ -4,11 +4,13 @@ import Add from "./components/Add/Add";
 import AdminPage from "./components/AdminPage/AdminPage";
 import Collections from "./components/Collections/Collections";
 import Edit from "./components/Edit/Edit";
+import Following from "./components/Following/Following";
 import Navbar from "./components/Navbar/Navbar";
 import Navbar2 from "./components/Navbar2/Navbar2";
 import Phone from "./components/Phone/Phone";
 import FavContextProvider from "./context/favContext";
 import PostContextProvider from "./context/postContext";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -23,12 +25,13 @@ function App() {
             <Route path="/edit/:id" element={<Edit />} />
             <Route path="/phone" element={<Phone />} />
             <Route path="/collections" element={<Collections />} />
+            <Route path="/following" element={<Following />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </BrowserRouter>
       </FavContextProvider>
     </PostContextProvider>
   );
-  return <div className="App"></div>;
 }
 
 export default App;

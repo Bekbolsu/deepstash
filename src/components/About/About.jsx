@@ -12,6 +12,12 @@ import image9 from "../About/imagesAbout/image9.png";
 import image10 from "../About/imagesAbout/image10.png";
 import image11 from "../About/imagesAbout/image11.png";
 
+import image12 from "../images_add/instagram.svg";
+import image13 from "../images_add/facebook.svg";
+import image14 from "../images_add/footer.svg";
+import image15 from "../images_add/you.svg";
+import image16 from "../images_add/twitter.svg";
+
 const About = () => {
   return (
     <>
@@ -193,6 +199,28 @@ const About = () => {
               </p>
               <p className="ourcoree">APPLY FOR OUR CURATORS PROGRAMME</p>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="container" style={{ marginTop: "200px" }}>
+        <img className="img_footer" src={image14} alt="" />
+        <div className="main_footer">
+          <div>
+            <a target="_blank" href="https://www.instagram.com/deepstash/">
+              <img className="footer_nav" src={image12} alt="" />
+            </a>
+            <a target="_blank" href="https://www.facebook.com/deepstash/">
+              <img className="footer_nav" src={image13} alt="" />
+            </a>
+            <a target="_blank" href="https://twitter.com/deepstash/">
+              <img className="footer_nav" src={image15} alt="" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
+            >
+              <img className="footer_nav" src={image16} alt="" />
+            </a>
           </div>
         </div>
       </div>
