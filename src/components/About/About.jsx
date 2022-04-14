@@ -15,7 +15,7 @@ import image11 from "../About/imagesAbout/image11.png";
 const About = () => {
   return (
     <>
-      <div className="container-about1">
+      <div className="container-about1 ">
         <img className="image-about" src={image} alt="" />
         <div>
           <p className="ourcore">OUR CORE BELIEF</p>
@@ -23,7 +23,7 @@ const About = () => {
             <p className="ideas">Ideas are fundamental</p>
           </div>
           <div>
-            <p className="ifwe">
+            <p className="ifwe ">
               If we evolve our biology through genes, it's what we hold in our
               brains that help shape our lives and improve the world around us.
               Ideas represent the building blocks of the modern world, informing
@@ -58,15 +58,16 @@ const About = () => {
       <div className="container-about3">
         <p className="ourcore">A CLOSER LOOK</p>
         <p className="ideas">How does it work?</p>
-        <p className="deepstash">
+        <p className="deepstashh1">
           In Deepstash you find ideas on topics that interest you. These ideas
           are represented as little cards you can read at a glance. All ideas
           have a source: a book, an article, a podcast etc. And they are curated
           by a people like you.
         </p>
         <p className="now">Now with that in mind, here are the basics:</p>
+
         <div className="about-blocks">
-          <div className="about-block">
+          <div className="about-blockk">
             <img className="image1-about" src={image1} alt="" />
             <div className="textinblocks">
               <p className="deepstash">
@@ -76,12 +77,11 @@ const About = () => {
             </div>
             <div className="textinblocks">
               <p className="deepstash">
-                Tapping on any idea will show you all the related ideas curated
-                by the same author from that article or book.
+                Tapping on any idea will show you all the related ideas.
               </p>
             </div>
           </div>
-          <img className="about-image9" src={image9} alt="" />
+          <img className="about-image9 about-image" src={image9} alt="" />
           <div className="about-block">
             <img className="image1-aboutt" src={image2} alt="" />
             <div className="textinblocks">
@@ -97,8 +97,8 @@ const About = () => {
             </div>
           </div>
         </div>
-        <img className="about-image10" src={image10} alt="" />
-        <img className="about-image11" src={image11} alt="" />
+        <img className="about-image10 about-image" src={image10} alt="" />
+        <img className="about-image11 about-image" src={image11} alt="" />
         <div className="about-blockss">
           <div className="about-blockk">
             <img className="image1-about1" src={image3} alt="" />
@@ -127,8 +127,9 @@ const About = () => {
             </div>
           </div>
         </div>
-        <img className="about-image10" src={image10} alt="" />
-        <img className="about-image11" src={image11} alt="" />
+        <img className="about-image10 about-image" src={image10} alt="" />
+        <img className="about-image11 about-image" src={image11} alt="" />
+
         <div className="last-block">
           <img className="last-block-img" src={image5} alt="" />
           <div className="p2">
@@ -155,7 +156,7 @@ const About = () => {
             can pull out whenever you need them and stack them together to
             create amazing new things. Ideas are:
           </p>
-          <ul>
+          <ul className="ul">
             <li className="li">Atomic: one concept per idea.</li>
             <li className="li">
               Short: good ideas are as condensed as possible but not more.

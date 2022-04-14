@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import About from "./components/About/About";
 import Add from "./components/Add/Add";
 import AdminPage from "./components/AdminPage/AdminPage";
 import Collections from "./components/Collections/Collections";
@@ -28,7 +29,6 @@ function App() {
       </FavContextProvider>
     </PostContextProvider>
   );
-  return <div className="App"></div>;
 }
 
 export default App;
