@@ -78,7 +78,7 @@ const Navbar = () => {
                     </h3>
                   </div>
                   <div className="modal_block2">
-                    <h3 className="visa">Visa Maestro Bitcoin</h3>
+                    <h1 className="visa">Visa / Maestro / Bitcoin</h1>
                     <div style={{ display: "flex", flexDirection: "column" }}>
                       <p className="pay_p">Number of card</p>
                       <input
@@ -254,8 +254,8 @@ const Navbar = () => {
           <Link to="/following" className="navbar2_a" href="#">
             following
           </Link>
-          <Link to="/chat" className="navbar2_a" href="#">
-            Chat
+          <Link to="/about" className="navbar2_a" href="#">
+            about
           </Link>
         </div>
       </div>

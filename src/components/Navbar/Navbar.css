@@ -208,7 +208,7 @@
   margin: 0;
 }
 .modal_block1_h6 {
-  width: 300px;
+  width: 250px;
 }
 .modal_block1_h5 {
   margin: 0;
@@ -242,12 +242,14 @@
   background: none;
   color: white;
   height: 30px;
+  border: 1px solid white;
 }
 .pay_inp1 {
   background: none;
   color: white;
   margin-bottom: 20px;
   height: 30px;
+  border: 1px solid white;
 }
 .pay_btn {
   margin-top: 20px;

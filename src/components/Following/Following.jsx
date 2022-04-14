@@ -24,175 +24,151 @@ const Following = () => {
           <div className="main-following-container4">
             {/*  */}
             <div className="main-following-container5">
-              <img
-                className="block-following-img"
-                src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2F172994-1621876856.jpeg&w=3840&q=75"
-                alt="mamed"
-              />
-              <div className="main-following-container6">
-                <p className="block-following-p3">@mortifer</p>
-                <p className="block-following-p4">Tejash Vhavle</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  className="block-following-img"
+                  src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2F172994-1621876856.jpeg&w=3840&q=75"
+                  alt="mamed"
+                />
+                <div className="main-following-container6">
+                  <p className="block-following-p3">@mortifer</p>
+                  <p className="block-following-p4">Tejash Vhavle</p>
+                </div>
               </div>
               <div className="main-following-container7">
                 <button className="block-following-button">Follow</button>
               </div>
             </div>
-            <div className="main-following-container8">
-              <p className="block-following-p5">
-                We're all alone in this universe, helpless and worthless.".....
-                atleast that's what we all think but time and time It's been
-                proven that knowledge and like minded people are there all
-                around us and we just need to open up our eyes to take a look
-                around
-              </p>
-            </div>
+
             {/*  */}
             {/*  */}
             <div className="main-following-container5">
-              <img
-                className="block-following-img"
-                src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2Fcorys_clair.png&w=3840&q=75"
-                alt="mamed"
-              />
-              <div className="main-following-container6">
-                <p className="block-following-p3">@corys_clair</p>
-                <p className="block-following-p4">Cory Sinclair</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  className="block-following-img"
+                  src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2Fcorys_clair.png&w=3840&q=75"
+                  alt="mamed"
+                />
+                <div className="main-following-container6">
+                  <p className="block-following-p3">@corys_clair</p>
+                  <p className="block-following-p4">Cory Sinclair</p>
+                </div>
               </div>
               <div className="main-following-container7">
                 <button className="block-following-button">Follow</button>
               </div>
             </div>
-            <div className="main-following-container9">
-              <p className="block-following-p5">
-                Coder. Husband. Father of 2. Believer in Christ!
-              </p>
-            </div>
+
             {/*  */}
             {/*  */}
             <div className="main-following-container5">
-              <img
-                className="block-following-img"
-                src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2Frylee_h232.png&w=3840&q=75"
-                alt="mamed"
-              />
-              <div className="main-following-container6">
-                <p className="block-following-p3">@rylee_h</p>
-                <p className="block-following-p4">Rylee</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  className="block-following-img"
+                  src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2Frylee_h232.png&w=3840&q=75"
+                  alt="mamed"
+                />
+                <div className="main-following-container6">
+                  <p className="block-following-p3">@rylee_h</p>
+                  <p className="block-following-p4">Rylee</p>
+                </div>
               </div>
               <div className="main-following-container7">
                 <button className="block-following-button">Follow</button>
               </div>
             </div>
-            <div className="main-following-container9">
-              <p className="block-following-p5">
-                1% better every day, gets you 1000% better very soon.
-              </p>
-            </div>
+
             {/*  */}
             {/*  */}
             <div className="main-following-container5">
-              <img
-                className="block-following-img"
-                src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2Fgriq512.png&w=3840&q=75"
-                alt="mamed"
-              />
-              <div className="main-following-container6">
-                <p className="block-following-p3">@griq</p>
-                <p className="block-following-p4">Griffin Q.</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  className="block-following-img"
+                  src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2Fgriq512.png&w=3840&q=75"
+                  alt="mamed"
+                />
+                <div className="main-following-container6">
+                  <p className="block-following-p3">@griq</p>
+                  <p className="block-following-p4">Griffin Q.</p>
+                </div>
               </div>
               <div className="main-following-container7">
                 <button className="block-following-button">Follow</button>
               </div>
             </div>
-            <div className="main-following-container9">
-              <p className="block-following-p5">
-                TEAM = (T)ogether (E)veryone (A)chieves (M)ore
-              </p>
-            </div>
+
             {/*  */}
             {/*  */}
             <div className="main-following-container5">
-              <img
-                className="block-following-img"
-                src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2F1252976-1649441169.jpeg&w=3840&q=75"
-                alt="mamed"
-              />
-              <div className="main-following-container6">
-                <p className="block-following-p3">@kyle_zamuel</p>
-                <p className="block-following-p4">Kyle Zamuel</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  className="block-following-img"
+                  src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2F1252976-1649441169.jpeg&w=3840&q=75"
+                  alt="mamed"
+                />
+                <div className="main-following-container6">
+                  <p className="block-following-p3">@kyle_zamuel</p>
+                  <p className="block-following-p4">Kyle Zamuel</p>
+                </div>
               </div>
               <div className="main-following-container7">
                 <button className="block-following-button">Follow</button>
               </div>
             </div>
-            <div className="main-following-container9">
-              <p className="block-following-p5">
-                Learning + Focus + Application = Success Medical Technology
-                student from the Philippines
-              </p>
-            </div>
+
             {/*  */}
             {/*  */}
             <div className="main-following-container5">
-              <img
-                className="block-following-img"
-                src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2F1327120-1630043644.jpeg&w=3840&q=75"
-                alt="mamed"
-              />
-              <div className="main-following-container6">
-                <p className="block-following-p3">@subbujunior</p>
-                <p className="block-following-p4">Anand Iyer</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  className="block-following-img"
+                  src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2F1327120-1630043644.jpeg&w=3840&q=75"
+                  alt="mamed"
+                />
+                <div className="main-following-container6">
+                  <p className="block-following-p3">@subbujunior</p>
+                  <p className="block-following-p4">Anand Iyer</p>
+                </div>
               </div>
               <div className="main-following-container7">
                 <button className="block-following-button">Follow</button>
               </div>
-            </div>
-            <div className="main-following-container9">
-              <p className="block-following-p5">
-                Everything here is going to be straight out of my mind.
-              </p>
-            </div>
-            {/*  */}
-            {/*  */}
-            <div className="main-following-container5">
-              <img
-                className="block-following-img"
-                src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2F1383601-1634914885.jpeg&w=3840&q=75"
-                alt="mamed"
-              />
-              <div className="main-following-container6">
-                <p className="block-following-p3">@pixe_blog</p>
-                <p className="block-following-p4">Pixe Blog</p>
-              </div>
-              <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
-              </div>
-            </div>
-            <div className="main-following-container9">
-              <p className="block-following-p5">
-                #book #quotes #photography #loveThat's my life......
-              </p>
             </div>
 
             <div className="main-following-container5">
-              <img
-                className="block-following-img"
-                src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2Fhjoy2020.png&w=3840&q=75"
-                alt="mamed"
-              />
-              <div className="main-following-container6">
-                <p className="block-following-p3">@hjoy</p>
-                <p className="block-following-p4">Hamish Joy</p>
+              <div style={{ display: "flex" }}>
+                <img
+                  className="block-following-img"
+                  src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2F1383601-1634914885.jpeg&w=3840&q=75"
+                  alt="mamed"
+                />
+                <div className="main-following-container6">
+                  <p className="block-following-p3">@pixe_blog</p>
+                  <p className="block-following-p4">Pixe Blog</p>
+                </div>
               </div>
               <div className="main-following-container7">
                 <button className="block-following-button">Follow</button>
               </div>
             </div>
-            <div className="main-following-container9">
-              <p className="block-following-p5">
-                Love all, trust a few, do wrong to none.
-              </p>
+
+            <div className="main-following-container5">
+              <div style={{ display: "flex" }}>
+                <img
+                  className="block-following-img"
+                  src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fprofile%2Fhjoy2020.png&w=3840&q=75"
+                  alt="mamed"
+                />
+                <div className="main-following-container6">
+                  <p className="block-following-p3">@hjoy</p>
+                  <p className="block-following-p4">Hamish Joy</p>
+                </div>
+              </div>
+              <div className="main-following-container7">
+                <button className="block-following-button">Follow</button>
+              </div>
             </div>
+
             {/*  */}
           </div>
         </div>

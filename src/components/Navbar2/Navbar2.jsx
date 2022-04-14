@@ -11,6 +11,7 @@ import image8 from "../images_add/fav.svg";
 import image11 from "../images_add/you.svg";
 import image9 from "../images_add/comment.svg";
 import image10 from "../images_add/like.svg";
+import image12 from "../images_add/twitter.svg";
 
 import { postContext } from "../../context/postContext";
 import { Link } from "react-router-dom";
@@ -166,7 +167,7 @@ const Navbar2 = () => {
         ))}
       </div>
       <div style={{ marginTop: "200px" }}>
-        <img className="img_footer" src={image3} alt="" />
+        <img className="img_footer " src={image3} alt="" />
         <div className="main_footer">
           <div>
             <a target="_blank" href="https://www.instagram.com/deepstash/">
@@ -176,13 +177,13 @@ const Navbar2 = () => {
               <img className="footer_nav" src={image4} alt="" />
             </a>
             <a target="_blank" href="https://twitter.com/deepstash/">
-              <img className="footer_nav" src={image7} alt="" />
+              <img className="footer_nav" src={image11} alt="" />
             </a>
             <a
               target="_blank"
               href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
             >
-              <img className="footer_nav" src={image11} alt="" />
+              <img className="footer_nav" src={image12} alt="" />
             </a>
           </div>
         </div>
