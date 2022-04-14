@@ -50,12 +50,14 @@
   margin-bottom: 20px;
 }
 .fav_img {
-  width: 35px;
+  width: 30px;
   display: flex;
   align-self: flex-start;
-  margin-top: 30px;
-  margin-left: 20px;
+  margin-right: 20px;
   cursor: pointer;
+}
+.list1_titles {
+  width: 100%;
 }
 .book_img {
   width: 60px;

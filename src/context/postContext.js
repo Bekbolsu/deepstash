@@ -1,4 +1,4 @@
-import React, { useReducer } from "react";
+import React, { useReducer, useState } from "react";
 import axios from "axios";
 export const postContext = React.createContext();
 
@@ -6,6 +6,7 @@ let API = "http://localhost:8000/post";
 const INIT_STATE = {
   post: [],
   onePost: null,
+  count: 0,
 };
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
@@ -18,6 +19,10 @@ const reducer = (state = INIT_STATE, action) => {
       return {
         ...state,
         onePost: action.payload,
+      };
+    case "INCREMENT":
+      return {
+        count: action.payload,
       };
     default:
       return state;
@@ -55,16 +60,26 @@ const PostContextProvider = ({ children }) => {
     });
   }
 
+  function counter() {
+    let count = count;
+    dispatch({
+      type: "INCREMENT",
+      payload: count++,
+    });
+  }
+
   return (
     <postContext.Provider
       value={{
         post: state.post,
         onePost: state.onePost,
+        count: state.count,
         addPost,
         getPost,
         deletePost,
         getOnePost,
         updatePost,
+        counter,
       }}
     >
       {children}

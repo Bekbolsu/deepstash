@@ -8,6 +8,17 @@ import image7 from "../images/prem.svg";
 import image8 from "../images_add/fav.svg";
 
 const Following = () => {
+  const [but, setBut] = useState(true);
+  const [but2, setBut2] = useState(true);
+
+  const [but3, setBut3] = useState(true);
+
+  const [but4, setBut4] = useState(true);
+  const [but5, setBut5] = useState(true);
+  const [but6, setBut6] = useState(true);
+  const [but7, setBut7] = useState(true);
+  const [but8, setBut8] = useState(true);
+
   return (
     <>
       <div className="main-following-container1">
@@ -36,7 +47,18 @@ const Following = () => {
                 </div>
               </div>
               <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
+                {but ? (
+                  <button
+                    className="block-following-button"
+                    onClick={() => setBut(false)}
+                  >
+                    Follow
+                  </button>
+                ) : (
+                  <button onClick={() => setBut(true)} className="button">
+                    Following
+                  </button>
+                )}
               </div>
             </div>
 
@@ -55,7 +77,18 @@ const Following = () => {
                 </div>
               </div>
               <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
+                {but2 ? (
+                  <button
+                    className="block-following-button"
+                    onClick={() => setBut2(false)}
+                  >
+                    Follow
+                  </button>
+                ) : (
+                  <button onClick={() => setBut2(true)} className="button">
+                    Following
+                  </button>
+                )}
               </div>
             </div>
 
@@ -74,7 +107,18 @@ const Following = () => {
                 </div>
               </div>
               <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
+                {but3 ? (
+                  <button
+                    className="block-following-button"
+                    onClick={() => setBut3(false)}
+                  >
+                    Follow
+                  </button>
+                ) : (
+                  <button onClick={() => setBut3(true)} className="button">
+                    Following
+                  </button>
+                )}
               </div>
             </div>
 
@@ -93,7 +137,18 @@ const Following = () => {
                 </div>
               </div>
               <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
+                {but4 ? (
+                  <button
+                    className="block-following-button"
+                    onClick={() => setBut4(false)}
+                  >
+                    Follow
+                  </button>
+                ) : (
+                  <button onClick={() => setBut4(true)} className="button">
+                    Following
+                  </button>
+                )}
               </div>
             </div>
 
@@ -112,7 +167,18 @@ const Following = () => {
                 </div>
               </div>
               <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
+                {but5 ? (
+                  <button
+                    className="block-following-button"
+                    onClick={() => setBut5(false)}
+                  >
+                    Follow
+                  </button>
+                ) : (
+                  <button onClick={() => setBut5(true)} className="button">
+                    Following
+                  </button>
+                )}
               </div>
             </div>
 
@@ -131,7 +197,18 @@ const Following = () => {
                 </div>
               </div>
               <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
+                {but6 ? (
+                  <button
+                    className="block-following-button"
+                    onClick={() => setBut6(false)}
+                  >
+                    Follow
+                  </button>
+                ) : (
+                  <button onClick={() => setBut6(true)} className="button">
+                    Following
+                  </button>
+                )}
               </div>
             </div>
 
@@ -148,7 +225,18 @@ const Following = () => {
                 </div>
               </div>
               <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
+                {but7 ? (
+                  <button
+                    className="block-following-button"
+                    onClick={() => setBut7(false)}
+                  >
+                    Follow
+                  </button>
+                ) : (
+                  <button onClick={() => setBut7(true)} className="button">
+                    Following
+                  </button>
+                )}
               </div>
             </div>
 
@@ -165,7 +253,18 @@ const Following = () => {
                 </div>
               </div>
               <div className="main-following-container7">
-                <button className="block-following-button">Follow</button>
+                {but8 ? (
+                  <button
+                    className="block-following-button"
+                    onClick={() => setBut8(false)}
+                  >
+                    Follow
+                  </button>
+                ) : (
+                  <button onClick={() => setBut8(true)} className="button">
+                    Following
+                  </button>
+                )}
               </div>
             </div>
 

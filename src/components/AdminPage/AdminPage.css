@@ -98,6 +98,11 @@
 .list_div {
   height: 200px;
 }
+.list_img1 {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
 .beka1 {
   margin-left: 10px;
 }

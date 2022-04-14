@@ -10,7 +10,7 @@ const Add = () => {
   const [img, setImg] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const { addPost, getPost } = useContext(postContext);
+  const { addPost, getPost, count, counter } = useContext(postContext);
   function postAdd() {
     let newObj = {
       img,
