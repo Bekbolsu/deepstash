@@ -140,9 +140,9 @@ const Navbar2 = () => {
                 <p className="list_p">{item.description}</p>
               </div>
               <div style={{ display: "flex", justifyContent: "flex-end" }}>
-                <img className="fav_img" src={image8} alt="" />
                 <img className="like1" src={image10} alt="" />
                 <img className="like1" src={image9} alt="" />
+                <img className="like1" src={image8} alt="" />
               </div>
             </div>
             <div className="list2">
@@ -159,6 +159,8 @@ const Navbar2 = () => {
                 <h4 className="book_title">SELF-IMPROVEMENT</h4>
               </div>
               <div className="comments">
+                <img className="fav_img" src={image8} alt="" />
+
                 <img className="like" src={image10} alt="" />
                 <img className="com" src={image9} alt="" />
               </div>

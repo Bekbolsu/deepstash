@@ -111,7 +111,19 @@
     box-shadow: 0 0 25px #a416cf, 0 0 50px #ad1be7;
   }
 }
+.button {
+  color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid black;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  background-color: black;
+  color: violet;
 
+  cursor: pointer;
+}
 .main-following-container8 {
   width: 625px;
   height: 80px;
@@ -193,6 +205,10 @@
   }
   .block-following-button {
     width: auto;
+  }
+  .button {
+    width: auto;
+    font-size: 10px;
   }
   .block-following-p3 {
     margin-top: 20px;
