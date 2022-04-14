@@ -1,19 +1,25 @@
-import React from "react";
-import "./About.css";
-import image from "../About/imagesAbout/image.png";
-import image1 from "../About/imagesAbout/image1.png";
-import image2 from "../About/imagesAbout/image2.png";
-import image3 from "../About/imagesAbout/image3.png";
-import image4 from "../About/imagesAbout/image4.png";
-import image5 from "../About/imagesAbout/image5.png";
-import image6 from "../About/imagesAbout/image6.png";
-import image7 from "../About/imagesAbout/image7.png";
-import image9 from "../About/imagesAbout/image9.png";
-import image10 from "../About/imagesAbout/image10.png";
-import image11 from "../About/imagesAbout/image11.png";
+// import React from "react";
+// import "./About.css";
+// import image from "../About/imagesAbout/image.png";
+// import image1 from "../About/imagesAbout/image1.png";
+// import image2 from "../About/imagesAbout/image2.png";
+// import image3 from "../About/imagesAbout/image3.png";
+// import image4 from "../About/imagesAbout/image4.png";
+// import image5 from "../About/imagesAbout/image5.png";
+// import image6 from "../About/imagesAbout/image6.png";
+// import image7 from "../About/imagesAbout/image7.png";
+// import image9 from "../About/imagesAbout/image9.png";
+// import image10 from "../About/imagesAbout/image10.png";
+// import image11 from "../About/imagesAbout/image11.png";
 
-const About = () => {
-  return (
+// import image12 from "../images_add/instagram.svg";
+// import image13 from "../images_add/facebook.svg";
+// import image14 from "../images_add/footer.svg";
+// import image15 from "../images_add/you.svg";
+// import image16 from "../images_add/twitter.svg";
+
+// const About = () => {
+//   return (
     <>
       <div className="container-about1 ">
         <img className="image-about" src={image} alt="" />
@@ -197,8 +203,30 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="container" style={{ marginTop: "200px" }}>
+        <img className="img_footer" src={image14} alt="" />
+        <div className="main_footer">
+          <div>
+            <a target="_blank" href="https://www.instagram.com/deepstash/">
+              <img className="footer_nav" src={image12} alt="" />
+            </a>
+            <a target="_blank" href="https://www.facebook.com/deepstash/">
+              <img className="footer_nav" src={image13} alt="" />
+            </a>
+            <a target="_blank" href="https://twitter.com/deepstash/">
+              <img className="footer_nav" src={image15} alt="" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
+            >
+              <img className="footer_nav" src={image16} alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
     </>
-  );
-};
+//   );
+// };
 
-export default About;
+// export default About;

@@ -94,3 +94,19 @@
   color: white;
   width: 200px;
 }
+@media (max-width: 550px) {
+  .add_post_block {
+    width: auto;
+  }
+}
+@media (max-width: 450px) {
+  .add_post_block {
+    width: 300px;
+  }
+  .text_bomb {
+    width: 250px;
+  }
+  .bomb_inp {
+    width: 150px;
+  }
+}

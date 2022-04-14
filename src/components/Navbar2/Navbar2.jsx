@@ -8,8 +8,10 @@ import image3 from "../images_add/footer.svg";
 
 import image7 from "../images/prem.svg";
 import image8 from "../images_add/fav.svg";
+import image11 from "../images_add/you.svg";
 import image9 from "../images_add/comment.svg";
 import image10 from "../images_add/like.svg";
+import image12 from "../images_add/twitter.svg";
 
 import { postContext } from "../../context/postContext";
 import { Link } from "react-router-dom";
@@ -23,10 +25,16 @@ const Navbar2 = () => {
   return (
     <div className="container">
       <div>
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
           <h3>COLLECTIONS</h3>
           <Link style={{ textDecoration: "none" }} to="/collections">
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex", alignItems: "center" }}>
               <h3>See All</h3>
               <img className="col_all" src={image2} alt="" />
             </div>
@@ -125,12 +133,17 @@ const Navbar2 = () => {
             key={item.id}
           >
             <div className="list1">
+              <h4 className="beka">@Bekbolsun</h4>
               <img className="list_img" src={item.img} alt="" />
               <div className="list1_titles">
                 <h1 className="list_h1">{item.title}</h1>
                 <p className="list_p">{item.description}</p>
               </div>
-              <img className="fav_img" src={image8} alt="" />
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                <img className="like1" src={image10} alt="" />
+                <img className="like1" src={image9} alt="" />
+                <img className="like1" src={image8} alt="" />
+              </div>
             </div>
             <div className="list2">
               <div className="list2_3">
@@ -146,6 +159,8 @@ const Navbar2 = () => {
                 <h4 className="book_title">SELF-IMPROVEMENT</h4>
               </div>
               <div className="comments">
+                <img className="fav_img" src={image8} alt="" />
+
                 <img className="like" src={image10} alt="" />
                 <img className="com" src={image9} alt="" />
               </div>
@@ -154,7 +169,7 @@ const Navbar2 = () => {
         ))}
       </div>
       <div style={{ marginTop: "200px" }}>
-        <img className="img_footer" src={image3} alt="" />
+        <img className="img_footer " src={image3} alt="" />
         <div className="main_footer">
           <div>
             <a target="_blank" href="https://www.instagram.com/deepstash/">
@@ -164,13 +179,13 @@ const Navbar2 = () => {
               <img className="footer_nav" src={image4} alt="" />
             </a>
             <a target="_blank" href="https://twitter.com/deepstash/">
-              <img className="footer_nav" src={image7} alt="" />
+              <img className="footer_nav" src={image11} alt="" />
             </a>
             <a
               target="_blank"
               href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
             >
-              <img className="footer_nav" src={image8} alt="" />
+              <img className="footer_nav" src={image12} alt="" />
             </a>
           </div>
         </div>
