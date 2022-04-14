@@ -8,6 +8,7 @@ import image3 from "../images_add/footer.svg";
 
 import image7 from "../images/prem.svg";
 import image8 from "../images_add/fav.svg";
+import image11 from "../images_add/you.svg";
 import image9 from "../images_add/comment.svg";
 import image10 from "../images_add/like.svg";
 
@@ -131,12 +132,17 @@ const Navbar2 = () => {
             key={item.id}
           >
             <div className="list1">
+              <h4 className="beka">@Bekbolsun</h4>
               <img className="list_img" src={item.img} alt="" />
               <div className="list1_titles">
                 <h1 className="list_h1">{item.title}</h1>
                 <p className="list_p">{item.description}</p>
               </div>
-              <img className="fav_img" src={image8} alt="" />
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                <img className="fav_img" src={image8} alt="" />
+                <img className="like1" src={image10} alt="" />
+                <img className="like1" src={image9} alt="" />
+              </div>
             </div>
             <div className="list2">
               <div className="list2_3">
@@ -176,7 +182,7 @@ const Navbar2 = () => {
               target="_blank"
               href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
             >
-              <img className="footer_nav" src={image8} alt="" />
+              <img className="footer_nav" src={image11} alt="" />
             </a>
           </div>
         </div>

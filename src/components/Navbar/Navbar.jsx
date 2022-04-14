@@ -12,6 +12,9 @@ import image6 from "../images/man.svg";
 import image8 from "../images_add/fav.svg";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
+import image10 from "../images_add/moon.svg";
+import image11 from "../images_add/mobile.svg";
+import image12 from "../images_add/logout.svg";
 
 const style = {
   position: "absolute",
@@ -40,6 +43,7 @@ const Navbar = () => {
     setNumber2("");
     setNumber3("");
   }
+  const [info, setInfo] = useState(false);
 
   return (
     <div className="container">
@@ -64,12 +68,11 @@ const Navbar = () => {
                 <Box className="modal_pro" sx={style}>
                   <div className="modal_block1">
                     <h1 className="modal_block1_h1">Get Deepstash Pro</h1>
-                    <h3 className="modal_block1_h4">It's time to</h3>
                     <h2 className="modal_block1_h2">Read Like a Pro</h2>
-                    <h3 className="modal_block1_h6">
+                    <p className="modal_block1_h6">
                       Jump-start your reading habits, gather your knowledge,
                       remember what you read and stay ahead of the crowd!
-                    </h3>
+                    </p>
                     <h3 className="modal_block1_h5">
                       Takes just 5 minutes a day.
                     </h3>
@@ -129,18 +132,117 @@ const Navbar = () => {
             </div>
             <div></div>
             <div className="navbar_block2">
-              <Link style={{ textDecoration: "none" }} to="/add">
+              <Link
+                onClick={() => setInfo(false)}
+                style={{ textDecoration: "none" }}
+                to="/add"
+              >
                 <div className="navbar_block2_add">
                   <img className="add_img" src={image4} alt="" />
                   <h4 className="add_h5">ADD IDEA</h4>
                 </div>
               </Link>
               <img className="add_img2" src={image8} alt="" />
+              {info ? (
+                <div className="info">
+                  <div className="info_inner">
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-around",
+                      }}
+                    >
+                      <img className="info_img" src={image11} alt="" />
+                      <button
+                        onClick={() => setInfo(false)}
+                        className="info_btn"
+                      >
+                        Log Out
+                      </button>
+                    </div>
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-around",
+                      }}
+                    >
+                      <img className="info_img" src={image12} alt="" />
+                      <Link onClick={() => setInfo(false)} to="/phone">
+                        <button className="info_btn">Mobile</button>
+                      </Link>
+                    </div>
+
+                    <Link
+                      onClick={() => setInfo(false)}
+                      style={{ textDecoration: "none", alignItems: "center" }}
+                      to="/add"
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "space-around",
+                        }}
+                      >
+                        <img
+                          className="add_img_info info_fav"
+                          src={image4}
+                          alt=""
+                        />
+                        <button className="info_btn info_fav">Add idea</button>
+                      </div>
+                    </Link>
+                    <div
+                      onClick={() => setInfo(false)}
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-around",
+                      }}
+                    >
+                      <img
+                        className="add_img_info info_fav"
+                        src={image8}
+                        alt=""
+                      />
+                      <button className="info_btn info_fav">Favorite</button>
+                    </div>
+
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-around",
+                      }}
+                      className="pro"
+                    >
+                      <img className="pro_img1" src={image2} alt="" />
+                      <button
+                        onClick={() => {
+                          handleOpen();
+                          setInfo(false);
+                        }}
+                        className="info_btn info_btn1"
+                      >
+                        Get Pro
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ) : null}
               <div className="main_man">
                 <Link to="/admin">
                   <img className="man" src={image6}></img>
                 </Link>
-                <img className="man_line" src={image2} alt="" />
+
+                <img
+                  onClick={() => setInfo(!info)}
+                  className="man_line"
+                  src={image2}
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -152,9 +254,9 @@ const Navbar = () => {
           <Link to="/following" className="navbar2_a" href="#">
             following
           </Link>
-          <a className="navbar2_a" href="#">
+          <Link to="/chat" className="navbar2_a" href="#">
             Chat
-          </a>
+          </Link>
         </div>
       </div>
     </div>

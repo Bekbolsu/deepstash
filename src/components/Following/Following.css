@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: center;
 }
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"); */
 
 .block-following-h2 {
   width: 587.67px;
@@ -163,4 +163,12 @@
   font-weight: 400;
   color: rgb(255, 255, 255);
   margin-top: 10px;
+}
+@media (max-width: 770px) {
+  .main-following-container4 {
+    width: auto;
+  }
+  .main-following-container7 {
+    width: 400px;
+  }
 }

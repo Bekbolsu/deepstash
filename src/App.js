@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Add from "./components/Add/Add";
 import AdminPage from "./components/AdminPage/AdminPage";
+import Chat from "./components/Chat/Chat";
 import Collections from "./components/Collections/Collections";
 import Edit from "./components/Edit/Edit";
 import Following from "./components/Following/Following";
@@ -25,6 +26,7 @@ function App() {
             <Route path="/phone" element={<Phone />} />
             <Route path="/collections" element={<Collections />} />
             <Route path="/following" element={<Following />} />
+            <Route path="/chat" element={<Chat />} />
           </Routes>
         </BrowserRouter>
       </FavContextProvider>

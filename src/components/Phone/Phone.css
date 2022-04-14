@@ -46,6 +46,9 @@
   width: 50px;
   margin-left: 5px;
 }
+.phone_h1 {
+  font-size: 30px;
+}
 .apple_block {
   width: 200px;
   background-color: black;
@@ -85,4 +88,30 @@
   width: 30px;
   cursor: pointer;
   margin: 20px;
+}
+@media (max-width: 770px) {
+  .mobile_blocks {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile_block1_h2 {
+    font-size: 20px;
+  }
+  .mobile_block2_h2 {
+    font-size: 20px;
+  }
+  .mobile_block1 {
+    width: 250px;
+  }
+  .mobile_block2 {
+    width: 250px;
+  }
+  .phone_h1 {
+    font-size: 20px;
+  }
 }

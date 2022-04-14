@@ -32,8 +32,8 @@ const AdminPage = () => {
             <div className="list1 admin_post">
               <img className="list_img" src={item.img} alt="" />
               <div>
-                <h1 className="list_h1">{item.title}</h1>
-                <p className="list_p">{item.description}</p>
+                <h1 className="list_h11">{item.title}</h1>
+                <p className="list_p1">{item.description}</p>
               </div>
               <div className="buttons">
                 <button
