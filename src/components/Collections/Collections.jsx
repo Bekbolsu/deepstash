@@ -5,14 +5,43 @@ import image5 from "../images_add/instagram.svg";
 import image4 from "../images_add/facebook.svg";
 import image3 from "../images_add/footer.svg";
 import image8 from "../images_add/fav.svg";
-
+import Stack from "@mui/material/Stack";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 const Collections = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClick = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
   return (
     <>
       <div className="container_col">
+        <Stack spacing={2} sx={{ width: "100%" }}>
+          <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+            <Alert
+              onClose={handleClose}
+              severity="warning"
+              sx={{ width: "100%" }}
+            >
+              We have a settings with <br /> payment try it in one hour
+            </Alert>
+          </Snackbar>
+        </Stack>
         <h1>All Collections</h1>
         <div className="col">
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fhandling_difficult_people.png&w=1920&q=75"
@@ -27,7 +56,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fask_for_a_raise.png&w=1920&q=75"
@@ -42,7 +71,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fboost_your_emotional_intelligence.png&w=1920&q=75"
@@ -55,7 +84,7 @@ const Collections = () => {
               <img className="prem" src={image7} alt="" /> pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fa_job_seekers_guide.png&w=1920&q=75"
@@ -70,7 +99,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fproductivity_hacks.png&w=1920&q=75"
@@ -85,7 +114,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fbeat_procrastination.png&w=1920&q=75"
@@ -100,7 +129,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fmaking_remote_work_work.png&w=1920&q=75"
@@ -115,7 +144,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fthink_outside_the_box.png&w=1920&q=75"
@@ -130,7 +159,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fthe_power_of_storytelling.png&w=1920&q=75"
@@ -145,7 +174,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fjoining_a_new_team.png&w=1920&q=75"
@@ -160,7 +189,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fno_more_broke.png&w=1920&q=75"
@@ -175,7 +204,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fproduct_management_essentials.png&w=1920&q=75"
@@ -190,7 +219,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fdesign_frameworks.png&w=1920&q=75"
@@ -205,7 +234,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fhow_to_sell_anything.png&w=1920&q=75"
@@ -220,7 +249,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fhow_to_succeed_at_investing.png&w=1920&q=75"
@@ -235,7 +264,7 @@ const Collections = () => {
               pro
             </h4>
           </div>
-          <div className="col_block">
+          <div onClick={handleClick} className="col_block">
             <img
               className="col_img"
               src="https://deepstash.com/_next/image?url=https%3A%2F%2Fd1dfxfqogsjixt.cloudfront.net%2Fcollection%2Fhappiness_at_work.png&w=1920&q=75"
@@ -249,28 +278,6 @@ const Collections = () => {
               <img className="prem" src={image7} alt="" />
               pro
             </h4>
-          </div>
-        </div>
-      </div>
-      <div className="container" style={{ marginTop: "200px" }}>
-        <img className="img_footer" src={image3} alt="" />
-        <div className="main_footer">
-          <div>
-            <a target="_blank" href="https://www.instagram.com/deepstash/">
-              <img className="footer_nav" src={image5} alt="" />
-            </a>
-            <a target="_blank" href="https://www.facebook.com/deepstash/">
-              <img className="footer_nav" src={image4} alt="" />
-            </a>
-            <a target="_blank" href="https://twitter.com/deepstash/">
-              <img className="footer_nav" src={image7} alt="" />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
-            >
-              <img className="footer_nav" src={image8} alt="" />
-            </a>
           </div>
         </div>
       </div>
