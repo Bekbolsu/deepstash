@@ -4,13 +4,13 @@
 .about {
   width: 730px;
   margin: 0 auto;
-  background-color: black;
+  background-color: #141313;
 }
 /* start styles of about 1 */
 
 .about1 {
   width: 730px;
-  background-color: black;
+  background-color: 141313;
   display: flex;
 }
 .image-about {
@@ -22,12 +22,14 @@
   font-weight: 800;
   color: rgb(217, 217, 217);
   margin-bottom: 5px;
+  text-align: center;
 }
 .ideas {
   font-size: 32px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 5px;
+  text-align: center;
 }
 .ifwe {
   font-size: 15px;
@@ -175,152 +177,269 @@
 }
 /* end styles of about 8 */
 
+@media (max-width: 740px) {
+  .about {
+    width: auto;
+    justify-content: center;
+  }
+}
+
 /* adap about 1 start*/
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .about1 {
-    max-width: 600px;
+    max-width: 680px;
+    margin: 0 auto;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .about1 {
-    max-width: 500px;
+    max-width: 550px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   .about1 {
-    max-width: 400px;
+    max-width: 450px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 530px) {
   .about1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-@media (max-width: 650px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 480px) {
+  .about1 {
+    max-width: 350px;
   }
 }
-@media (max-width: 450px) {
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 350px) {
+  .about1 {
+    max-width: 280px;
   }
 }
 /* adap about 1 end*/
 
 /* adap about 2 start*/
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .about2 {
-    max-width: 600px;
+    max-width: 680px;
+    margin: 0 auto;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .about2 {
-    max-width: 500px;
+    max-width: 550px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   .about2 {
-    max-width: 400px;
+    max-width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .about2 {
+    max-width: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .about2 {
+    max-width: 280px;
   }
 }
 /* adap about 2 end*/
 
 /* adap about 3 start*/
-@media (max-width: 650px) {
-  .ifwe {
-    max-width: 600px;
+@media (max-width: 750px) {
+  .about3 {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-bottom: 15px;
   }
 }
-@media (max-width: 550px) {
-  .ifwe {
-    max-width: 500px;
+@media (max-width: 700px) {
+  .about3 {
+    max-width: 550px;
   }
 }
-@media (max-width: 500px) {
-  .ifwe {
-    max-width: 400px;
+@media (max-width: 630px) {
+  .about3 {
+    max-width: 450px;
+  }
+}
+@media (max-width: 480px) {
+  .about3 {
+    max-width: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .about3 {
+    max-width: 280px;
   }
 }
 /* adap about 3 end*/
 
 /* adap about 456 start*/
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .about-image {
     display: none;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .about4 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .about5 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 680px;
+    margin: 0 auto;
   }
   .about-block {
-    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+  .about5 {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 700px) {
+    .about-block {
+      margin-right: 0px;
+    }
+  }
+  @media (max-width: 700px) {
+    .about4 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .about5 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media (max-width: 750px) {
+    .about-block {
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 350px) {
+    .about-block {
+      width: 300px;
+      height: 320px;
+    }
+    .textinblocks {
+      width: 250px;
+      margin: 0 auto;
+    }
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .about6 {
-    max-width: 500px;
+    width: 500px;
+    height: 190px;
+    margin: 0 auto;
+  }
+  .about6-img {
+    height: 90px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .about6 {
+    width: 330px;
+    height: 170px;
+  }
+  .noww {
+    margin-top: 30px;
+    font-size: 10px;
+  }
+  .p2 {
+    width: 180px;
+  }
+}
+@media (max-width: 350px) {
+  .about6 {
+    width: 300px;
+    height: 170px;
+  }
+  .noww {
+    margin-top: 30px;
+    font-size: 10px;
+  }
+  .p2 {
+    width: 180px;
   }
 }
 /* adap about 456 end*/
 
 /* adap about 7 start*/
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .about7 {
-    max-width: 600px;
+    max-width: 680px;
+    margin: 0 auto;
   }
 }
-
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .about7 {
+    max-width: 550px;
+  }
+}
+@media (max-width: 630px) {
   .about7 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 750px) {
+  .about7 {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .about7-left {
+    width: 350px;
+  }
+  .about-image6 {
+    height: 240px;
+  }
+}
+@media (max-width: 350px) {
+  .about7-left {
+    width: 280px;
   }
 }
 /* adap about 7 end*/
 
 /* adap about 8 start*/
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .about8 {
-    max-width: 600px;
+    max-width: 680px;
+    margin: 0 auto;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .about8 {
-    max-width: 500px;
+    max-width: 550px;
   }
 }
-@media (max-width: 500px) {
-  .about8 {
-    max-width: 400px;
-  }
-}
-@media (max-width: 650px) {
-  .left-right {
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 630px) {
   .left-right {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .about-image7 {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about8 {
+    max-width: 350px;
+  }
+}
+@media (max-width: 363px) {
+  .about8 {
+    max-width: 280px;
   }
 }
 /* adap about 8 end*/

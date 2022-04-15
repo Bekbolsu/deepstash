@@ -153,7 +153,7 @@ const Aboutt = () => {
                 Your Deepstash profile tells your story into the world of
                 knowledge.
               </p>
-              <p>
+              <p className="noww">
                 The ideas you stashed, your passions or preferences live on your
                 profile.
               </p>
