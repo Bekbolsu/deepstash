@@ -28,7 +28,6 @@ const Navbar2 = ({ item }) => {
   return (
     <div className="container">
       <div className="main_list">
-        {/* {post.map((item) => ( */}
         <div
           className="navbar_2block"
           style={{ display: "flex", alignItems: "center" }}
@@ -72,7 +71,10 @@ const Navbar2 = ({ item }) => {
                 alt=""
               />
               <h4 className="book_title">SELF-IMPROVEMENT</h4>
-            </div>
+              </div>
+        </div>
+        
+          
             <div className="comments">
               <img
                 onClick={() => {
@@ -93,9 +95,6 @@ const Navbar2 = ({ item }) => {
             </div>
             <p>{item.date}</p>
           </div>
-        </div>
-
-        {/* ))} */}
       </div>
     </div>
   );

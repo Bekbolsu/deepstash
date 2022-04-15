@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Add from "./components/Add/Add";
 import AdminPage from "./components/AdminPage/AdminPage";
 import Collections from "./components/Collections/Collections";
+import Deepstash from "./components/Deepstash/Deepstash";
 import Edit from "./components/Edit/Edit";
 import Fav from "./components/Fav/Fav";
 import Following from "./components/Following/Following";
@@ -32,11 +33,14 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/fav" element={<Fav />} />
             <Route path="/" element={<Kotok />} />
+            <Route path="/deepstash" element={<Deepstash />} />
+
           </Routes>
           <Footer />
         </BrowserRouter>
       </FavContextProvider>
     </PostContextProvider>
+
   );
 }
 

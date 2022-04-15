@@ -7,6 +7,7 @@ const INIT_STATE = {
   post: [],
   onePost: null,
   pages: 0,
+  count: 0,
 };
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
@@ -75,6 +76,7 @@ const PostContextProvider = ({ children }) => {
         post: state.post,
         onePost: state.onePost,
         pages: state.pages,
+        count: state.count,
         addPost,
         getPost,
         deletePost,
