@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Aboutt from "./components/Aboutt/Aboutt";
 import Add from "./components/Add/Add";
 import AdminPage from "./components/AdminPage/AdminPage";
 import Collections from "./components/Collections/Collections";
