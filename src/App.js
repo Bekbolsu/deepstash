@@ -3,6 +3,7 @@ import "./App.css";
 import Add from "./components/Add/Add";
 import AdminPage from "./components/AdminPage/AdminPage";
 import Collections from "./components/Collections/Collections";
+import Deepstash from "./components/Deepstash/Deepstash";
 import Edit from "./components/Edit/Edit";
 import Navbar from "./components/Navbar/Navbar";
 import Navbar2 from "./components/Navbar2/Navbar2";
@@ -23,10 +24,12 @@ function App() {
             <Route path="/edit/:id" element={<Edit />} />
             <Route path="/phone" element={<Phone />} />
             <Route path="/collections" element={<Collections />} />
+            <Route path="/deepstash" element={<Deepstash />}/>
           </Routes>
         </BrowserRouter>
       </FavContextProvider>
     </PostContextProvider>
+
   );
   return <div className="App">
   </div>;
