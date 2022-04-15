@@ -6,7 +6,7 @@ let API = "http://localhost:8000/post";
 const INIT_STATE = {
   post: [],
   onePost: null,
-  count: 0,
+  pages: 0,
 };
 const reducer = (state = INIT_STATE, action) => {
   switch (action.type) {
@@ -14,6 +14,7 @@ const reducer = (state = INIT_STATE, action) => {
       return {
         ...state,
         post: action.payload,
+        pages: Math.ceil(action.payload["x-total-count"] / 2),
       };
     case "GET_ONE_POST":
       return {
@@ -33,7 +34,7 @@ const PostContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
   async function getPost() {
-    let { data } = await axios.get(API);
+    let { data } = await axios.get(API + window.location.search);
     dispatch({
       type: "GET_POST",
       payload: data,
@@ -73,7 +74,7 @@ const PostContextProvider = ({ children }) => {
       value={{
         post: state.post,
         onePost: state.onePost,
-        count: state.count,
+        pages: state.pages,
         addPost,
         getPost,
         deletePost,

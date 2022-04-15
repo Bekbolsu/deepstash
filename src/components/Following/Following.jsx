@@ -272,28 +272,6 @@ const Following = () => {
           </div>
         </div>
       </div>
-      <div className="container">
-        <img className="img_footer" src={image3} alt="" />
-        <div className="main_footer">
-          <div>
-            <a target="_blank" href="https://www.instagram.com/deepstash/">
-              <img className="footer_nav" src={image5} alt="" />
-            </a>
-            <a target="_blank" href="https://www.facebook.com/deepstash/">
-              <img className="footer_nav" src={image4} alt="" />
-            </a>
-            <a target="_blank" href="https://twitter.com/deepstash/">
-              <img className="footer_nav" src={image7} alt="" />
-            </a>
-            <a
-              target="_blank"
-              href="https://www.youtube.com/channel/UCXh3Zca5WIW0C_tQJrDoa1w"
-            >
-              <img className="footer_nav" src={image8} alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
     </>
   );
 };
