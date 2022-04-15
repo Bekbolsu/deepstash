@@ -21,7 +21,6 @@ import Pizda from "./Pizda";
 const Navbar2 = ({ item }) => {
   const { addProductToCart2, checkItemInCard2 } = useContext(favContext);
   const [checkItem2, setCheckItem2] = useState(checkItemInCard2(item.id));
-  // const { post, getPost } = useContext(postContext);
   // useEffect(() => {
   //   getPost();
   // }, []);
