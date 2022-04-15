@@ -25,7 +25,6 @@ function App() {
             <Route path="/edit/:id" element={<Edit />} />
             <Route path="/phone" element={<Phone />} />
             <Route path="/collections" element={<Collections />} />
-            <Route path="/about" element={<Aboutt />} />
           </Routes>
         </BrowserRouter>
       </FavContextProvider>
