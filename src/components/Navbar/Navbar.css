@@ -187,10 +187,12 @@
   display: flex;
   justify-content: space-between;
   width: 600px;
+  flex-direction: column;
 }
 .modal_pro1 {
   width: 600px;
   margin: 0 auto;
+  padding: 40px;
 }
 .modal_block1 {
   display: flex;
@@ -203,12 +205,26 @@
 .modal_block1_h2 {
   color: rgb(255, 177, 2);
   margin: 0;
+  font-size: 40px;
 }
 .modal_block1_h4 {
   margin: 0;
 }
 .modal_block1_h6 {
   width: 250px;
+  margin-top: 50px;
+}
+
+.pay_btn2 {
+  margin-top: 40px;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(20, 19, 19);
+  color: rgb(255, 177, 2);
+  cursor: pointer;
+  font-size: 30px;
 }
 .modal_block1_h5 {
   margin: 0;
@@ -220,7 +236,8 @@
   background-color: rgb(20, 19, 19);
   padding: 30px;
   border-radius: 20px;
-  width: 250px;
+  width: 300px;
+  margin-left: 20px;
 }
 .pay_card {
   margin: 0;
@@ -266,6 +283,9 @@
   border-radius: 20px;
   z-index: 100;
 }
+.pay_main {
+  display: flex;
+}
 .info_btn {
   background: none;
   width: 80px;
@@ -303,6 +323,25 @@
   .navbar_block2_add {
     width: 100px;
   }
+  .modal_block1_h4 {
+    display: none;
+  }
+  .modal_block1_h2 {
+    display: none;
+  }
+  .modal_block1_h6 {
+    display: none;
+  }
+  .modal_block1_h5 {
+    display: none;
+  }
+  .pay_main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal_pro1 {
+    width: 400px;
+  }
 }
 @media (max-width: 750px) {
   .navbar_img {
@@ -324,26 +363,12 @@
     align-items: center;
     width: 300px;
   }
-  .modal_pro1 {
-    width: 300px;
-  }
+
   .modal_block1_h1 {
-    color: white;
     text-align: center;
     margin-bottom: 10px;
   }
-  .modal_block1_h4 {
-    display: none;
-  }
-  .modal_block1_h2 {
-    display: none;
-  }
-  .modal_block1_h6 {
-    display: none;
-  }
-  .modal_block1_h5 {
-    display: none;
-  }
+
   .info {
     height: 125px;
   }
@@ -352,6 +377,10 @@
   }
   .navbar_block2_add {
     width: 50px;
+  }
+  .pay_btn2 {
+    border-radius: 10px;
+    padding: 0 80px;
   }
   .pro_img {
     display: none;
@@ -390,13 +419,17 @@
   .info_fav {
     display: block;
   }
+  .modal_pro1 {
+    width: 300px;
+  }
 }
 @media (max-width: 450px) {
   .pro_h6 {
     display: none;
   }
   .modal_block2 {
-    width: 200px;
+    width: 300px;
+    margin-left: 0;
   }
   .modal_pro1 {
     width: 250px;
@@ -404,8 +437,24 @@
   .modal_block1_h1 {
     font-size: 20px;
   }
+  .pay_btn2 {
+    font-size: 25px;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 415px) {
+  .modal_block2 {
+    width: 200px;
+  }
+  .modal_pro1 {
+    width: 250px;
+    padding: 30px 10px;
+  }
 }
 @media (max-width: 380px) {
+  .modal_pro1 {
+    width: 200px;
+  }
   .navbar_img {
     width: 80px;
   }

@@ -16,6 +16,7 @@ const Add = () => {
       img,
       title,
       description,
+      date: new Date(),
     };
     setDescription("");
     setImg("");
