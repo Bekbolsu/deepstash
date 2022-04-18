@@ -1,24 +1,28 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import image2 from "../images/logo.svg";
 import "./Navbar2.css";
-import image6 from "../images/man.svg";
-import image5 from "../images_add/instagram.svg";
-import image4 from "../images_add/facebook.svg";
-import image3 from "../images_add/footer.svg";
 import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
+import { postContext } from "../../context/postContext";
+import Box from "@mui/material/Box";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+
 import image7 from "../images/prem.svg";
 import { Link } from "react-router-dom";
 const Alert = React.forwardRef(function Alert(props, ref) {
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-const Pizda = () => {
+const Pizza = ({ title, setTitle }) => {
+  const { getPost } = useContext(postContext);
+  const { post } = useContext(postContext);
   const [info, setInfo] = useState(false);
-
   const [open, setOpen] = React.useState(false);
-
+  console.log(title);
   const handleClick = () => {
     setOpen(true);
   };
@@ -30,6 +34,9 @@ const Pizda = () => {
 
     setOpen(false);
   };
+  useEffect(() => {
+    getPost();
+  }, []);
   return (
     <div className="container">
       <Stack spacing={2} sx={{ width: "100%" }}>
@@ -143,9 +150,32 @@ const Pizda = () => {
         <div className="list">
           <h3>DISCOVER NEW IDEAS</h3>
         </div>
+        <div className="select">
+          <Box sx={{ minWidth: 120 }}>
+            <FormControl fullWidth>
+              <InputLabel id="demo-simple-select-label">
+                Filter by title
+              </InputLabel>
+              <Select
+                displayEmpty={false}
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={title}
+                label="Filter by title"
+                onChange={(e) => setTitle(e.target.value)}
+              >
+                {post.map((item) => (
+                  <MenuItem key={item.id} value={item.title}>
+                    {item.title}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+          </Box>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Pizda;
+export default Pizza;

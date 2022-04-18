@@ -1,27 +1,28 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { postContext } from "../../context/postContext";
-import Navbar2 from "../Navbar2/Navbar2";
-import Pizda from "./Pizda";
+import Navbar2 from "./Navbar2";
+import Pizza from "./Pizza";
 import "./Pagination.css";
 import { Button } from "@mui/material";
-const Kotok = () => {
+const Kruto = () => {
   const { post, getPost, pages } = useContext(postContext);
 
   const [searchParams, setSearchparams] = useSearchParams();
   const [search, setSearch] = useState(
     searchParams.get("q") ? searchParams.get("q") : ""
   );
+  const [title, setTitle] = useState(post);
+
   const [page, setPage] = useState(1);
-  const [fil, setFil] = useState(false);
   const [limit, setLimit] = useState(3);
   useEffect(() => {
     setSearchparams({
-      q: search,
       _limit: limit,
       _page: page,
+      title: title,
     });
-  }, [search, page, limit]);
+  }, [page, limit, title]);
   useEffect(() => {
     getPost();
   }, [searchParams]);
@@ -30,7 +31,8 @@ const Kotok = () => {
   }, []);
   return (
     <div>
-      <Pizda />
+      <Pizza title={title} setTitle={setTitle} />
+
       {post.map((item) => (
         <>
           <Navbar2 key={item.id} item={item} />
@@ -59,4 +61,4 @@ const Kotok = () => {
   );
 };
 
-export default Kotok;
+export default Kruto;

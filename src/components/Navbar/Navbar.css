@@ -10,6 +10,7 @@
   border-radius: 40px;
   background-color: rgb(34, 34, 34);
 }
+
 .navbar_inner {
   display: flex;
   align-items: center;
@@ -156,7 +157,7 @@
 }
 .phone {
   background-color: rgb(34, 34, 34);
-
+  padding-left: 20px;
   border-radius: 30px;
   margin-top: 50px;
   height: 110px;

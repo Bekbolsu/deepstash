@@ -5,24 +5,36 @@ import image2 from "../images_add/bomb.svg";
 import image3 from "../images_add/back.svg";
 import { Link } from "react-router-dom";
 import { postContext } from "../../context/postContext";
+import { authContext } from "../../context/authContext";
+import Alert from "@mui/material/Alert";
+import Stack from "@mui/material/Stack";
 
 const Add = () => {
+  const { currentUser } = useContext(authContext);
   const [img, setImg] = useState("");
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const { addPost, getPost, count, counter } = useContext(postContext);
+  const [modal, setModal] = useState(false);
   function postAdd() {
     let newObj = {
       img,
       title,
       description,
+      user: currentUser.email,
       date: new Date(),
     };
+    if (!img || !title || !description) {
+      return setModal(true);
+    }
     setDescription("");
     setImg("");
     setTitle("");
     addPost(newObj);
   }
+  setTimeout(() => {
+    setModal(false);
+  }, 2000);
 
   return (
     <div className="container">
@@ -30,6 +42,15 @@ const Add = () => {
         <div style={{ display: "flex" }}>
           <img className="img_back" src={image3} alt="" />
           <h3 className="back_h3">Back</h3>
+          {modal ? (
+            <Stack
+              style={{ margin: "0 auto" }}
+              sx={{ width: "20%" }}
+              spacing={2}
+            >
+              <Alert severity="warning">Fill in all inputs</Alert>
+            </Stack>
+          ) : null}
         </div>
       </Link>
       <div className="add_post">
