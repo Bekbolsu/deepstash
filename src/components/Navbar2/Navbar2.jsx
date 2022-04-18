@@ -16,9 +16,11 @@ import image12 from "../images_add/twitter.svg";
 import { postContext } from "../../context/postContext";
 import { Link, useSearchParams } from "react-router-dom";
 import { favContext } from "../../context/favContext";
-import Pizda from "./Pizda";
+import Pizza from "./Pizza";
+import { authContext } from "../../context/authContext";
 
 const Navbar2 = ({ item }) => {
+  const { currentUser } = useContext(authContext);
   const { addProductToCart2, checkItemInCard2 } = useContext(favContext);
   const [checkItem2, setCheckItem2] = useState(checkItemInCard2(item.id));
   // useEffect(() => {
@@ -33,8 +35,8 @@ const Navbar2 = ({ item }) => {
           style={{ display: "flex", alignItems: "center" }}
           key={item.id}
         >
-          <div className="list1">
-            <h4 className="beka">@Bekbolsun</h4>
+          <div style={{ position: "relative" }} className="list1">
+            <h4 className="beka">{item.user}</h4>
             <img className="list_img" src={item.img} alt="" />
             <div className="list1_titles">
               <h1 className="list_h1">{item.title}</h1>
@@ -58,11 +60,17 @@ const Navbar2 = ({ item }) => {
                 alt=""
               />
             </div>
+            <div>
+              <p className="time" style={{ color: "black" }}>
+                {item.date}
+              </p>
+            </div>
           </div>
+
           <div className="list2">
             <div className="list2_3">
-              <img className="man_list2" src={image6}></img>
-              <h2 className="list_user">@Bekbolsun</h2>
+              {/* <img className="man_list2" src={image6}></img> */}
+              <h2 className="list_user">{item.user}</h2>
             </div>
             <div className="book">
               <img
@@ -71,10 +79,8 @@ const Navbar2 = ({ item }) => {
                 alt=""
               />
               <h4 className="book_title">SELF-IMPROVEMENT</h4>
-              </div>
-        </div>
-        
-          
+            </div>
+
             <div className="comments">
               <img
                 onClick={() => {
@@ -93,8 +99,8 @@ const Navbar2 = ({ item }) => {
               <img className="like" src={image10} alt="" />
               <img className="com" src={image9} alt="" />
             </div>
-            <p>{item.date}</p>
           </div>
+        </div>
       </div>
     </div>
   );

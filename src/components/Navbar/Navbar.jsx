@@ -16,6 +16,7 @@ import Stack from "@mui/material/Stack";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import { postContext } from "../../context/postContext";
+import { authContext } from "../../context/authContext";
 const style = {
   position: "absolute",
   top: "50%",
@@ -32,6 +33,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 });
 
 const Navbar = () => {
+  const { handleLogOut } = useContext(authContext);
   const { post, getPost } = useContext(postContext);
   const [searchParams, setSearchparams] = useSearchParams();
   const [search, setSearch] = useState(
@@ -222,7 +224,10 @@ const Navbar = () => {
                     >
                       <img className="info_img" src={image11} alt="" />
                       <button
-                        onClick={() => setInfo(false)}
+                        onClick={() => {
+                          setInfo(false);
+                          handleLogOut();
+                        }}
                         className="info_btn"
                       >
                         Log Out
@@ -325,6 +330,9 @@ const Navbar = () => {
           </Link>
           <Link to="/about" className="navbar2_a" href="#">
             about
+          </Link>
+          <Link to="/chat" className="navbar2_a">
+            chat
           </Link>
         </div>
       </div>
